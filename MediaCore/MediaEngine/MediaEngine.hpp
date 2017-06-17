@@ -9,7 +9,7 @@
 #ifndef MediaEngine_hpp
 #define MediaEngine_hpp
 
-#include <stdio.h>
+#include "MediaObject.hpp"
 
 namespace MediaCore {
     class MediaEngine : public MediaObject {

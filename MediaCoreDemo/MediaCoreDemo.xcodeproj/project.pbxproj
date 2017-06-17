@@ -13,9 +13,9 @@
 		DF3024281EF4EE5500263D4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3024261EF4EE5500263D4B /* Main.storyboard */; };
 		DF30242A1EF4EE5500263D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3024291EF4EE5500263D4B /* Assets.xcassets */; };
 		DF30242D1EF4EE5500263D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF30242B1EF4EE5500263D4B /* LaunchScreen.storyboard */; };
-		DF3024461EF4EFAE00263D4B /* MediaObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF3024441EF4EFAE00263D4B /* MediaObject.cpp */; };
 		DF3024491EF4F18500263D4B /* MediaData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF3024471EF4F18500263D4B /* MediaData.cpp */; };
 		DF3024521EF4F7ED00263D4B /* CMediaProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF3024501EF4F7ED00263D4B /* CMediaProcessor.cpp */; };
+		DF3024561EF4FAC500263D4B /* MediaObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF3024541EF4FAC500263D4B /* MediaObject.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,14 +29,15 @@
 		DF3024291EF4EE5500263D4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF30242C1EF4EE5500263D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF30242E1EF4EE5500263D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF3024441EF4EFAE00263D4B /* MediaObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediaObject.cpp; sourceTree = "<group>"; };
-		DF3024451EF4EFAE00263D4B /* MediaObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MediaObject.hpp; sourceTree = "<group>"; };
 		DF3024471EF4F18500263D4B /* MediaData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediaData.cpp; sourceTree = "<group>"; };
 		DF3024481EF4F18500263D4B /* MediaData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MediaData.hpp; sourceTree = "<group>"; };
 		DF30244A1EF4F3ED00263D4B /* MediaEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MediaEngine.cpp; sourceTree = "<group>"; };
 		DF30244B1EF4F3ED00263D4B /* MediaEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MediaEngine.hpp; sourceTree = "<group>"; };
 		DF3024501EF4F7ED00263D4B /* CMediaProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMediaProcessor.cpp; sourceTree = "<group>"; };
 		DF3024511EF4F7ED00263D4B /* CMediaProcessor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CMediaProcessor.hpp; sourceTree = "<group>"; };
+		DF3024541EF4FAC500263D4B /* MediaObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediaObject.cpp; sourceTree = "<group>"; };
+		DF3024551EF4FAC500263D4B /* MediaObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MediaObject.hpp; sourceTree = "<group>"; };
+		DF3024571EF4FB8000263D4B /* MediaCommonDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaCommonDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +54,6 @@
 		DF3024111EF4EE5500263D4B = {
 			isa = PBXGroup;
 			children = (
-				DF3024361EF4EE8100263D4B /* MediaCore */,
 				DF30241C1EF4EE5500263D4B /* MediaCoreDemo */,
 				DF30241B1EF4EE5500263D4B /* Products */,
 			);
@@ -70,6 +70,7 @@
 		DF30241C1EF4EE5500263D4B /* MediaCoreDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DF3024361EF4EE8100263D4B /* MediaCore */,
 				DF3024201EF4EE5500263D4B /* AppDelegate.h */,
 				DF3024211EF4EE5500263D4B /* AppDelegate.m */,
 				DF3024231EF4EE5500263D4B /* ViewController.h */,
@@ -94,14 +95,14 @@
 		DF3024361EF4EE8100263D4B /* MediaCore */ = {
 			isa = PBXGroup;
 			children = (
-				DF3024431EF4EF9700263D4B /* Mediautilities */,
+				DF3024531EF4FAC500263D4B /* MediaUtilities */,
 				DF3024371EF4EE8100263D4B /* MediaData */,
 				DF3024381EF4EE8100263D4B /* MediaEngine */,
 				DF3024391EF4EE8100263D4B /* MediaEvent */,
 				DF30243A1EF4EE8100263D4B /* MediaProcessor */,
 			);
 			name = MediaCore;
-			path = ../MediaCore;
+			path = ../../MediaCore;
 			sourceTree = "<group>";
 		};
 		DF3024371EF4EE8100263D4B /* MediaData */ = {
@@ -194,13 +195,14 @@
 			path = MediaSourcer;
 			sourceTree = "<group>";
 		};
-		DF3024431EF4EF9700263D4B /* Mediautilities */ = {
+		DF3024531EF4FAC500263D4B /* MediaUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				DF3024441EF4EFAE00263D4B /* MediaObject.cpp */,
-				DF3024451EF4EFAE00263D4B /* MediaObject.hpp */,
+				DF3024541EF4FAC500263D4B /* MediaObject.cpp */,
+				DF3024551EF4FAC500263D4B /* MediaObject.hpp */,
+				DF3024571EF4FB8000263D4B /* MediaCommonDefines.h */,
 			);
-			path = Mediautilities;
+			path = MediaUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,10 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3024491EF4F18500263D4B /* MediaData.cpp in Sources */,
+				DF3024561EF4FAC500263D4B /* MediaObject.cpp in Sources */,
 				DF3024251EF4EE5500263D4B /* ViewController.m in Sources */,
 				DF3024221EF4EE5500263D4B /* AppDelegate.m in Sources */,
 				DF30241F1EF4EE5500263D4B /* main.m in Sources */,
-				DF3024461EF4EFAE00263D4B /* MediaObject.cpp in Sources */,
 				DF3024521EF4F7ED00263D4B /* CMediaProcessor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MediaCore/MediaUtilities";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -379,6 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MediaCore/MediaUtilities";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;

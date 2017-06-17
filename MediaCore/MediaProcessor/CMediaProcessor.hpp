@@ -9,6 +9,8 @@
 #ifndef CMediaProcessor_hpp
 #define CMediaProcessor_hpp
 
+#include "MediaObject.hpp"
+
 namespace MediaCore {
     class CMediaProcessor : public MediaObject {
         
